@@ -1,0 +1,132 @@
+.container {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+    padding-top: 25px;
+}
+
+.beispiel {
+    font-style: italic;
+    border: 1px solid rgb(126, 72, 28);
+}
+
+.beispiel.hinweis {
+    color: green;
+}
+
+.hi {
+    color: rgb(197, 139, 63);
+}
+
+.zentriert {
+    text-align: center;
+}
+
+.links {
+    text-align: left
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid rgb(126, 72, 28);
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-left: 5px
+}
+
+.nav a {
+    display: block;
+    padding: 0.4em;
+    text-decoration: none;
+    font-weight: bold;
+    border: thin solid rgb(226, 184, 132);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px white inset;
+    color: rgb(153, 97, 28);
+    background-color: rgb(235, 197, 117);
+    transition: all .25s ease-in;
+    list-style-type: none;
+}
+
+.nav {
+    list-style-type: none;
+    width: 80%
+}
+
+.nav li[aria-current] a {
+    background-color: gold;
+    color: rgb(153, 97, 28)
+}
+
+.nav a:focus,
+.nav a:hover,
+.nav li[aria-current] a:focus,
+.nav li[aria-current] a:hover {
+    color: rgb(153, 97, 28);
+    background-color: gold;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        margin-top: 20px;
+    }
+}
+
+body {
+    background-image: url(Bilder/hs.jpg);
+    background-size: 375px;
+    color: rgb(153, 97, 28)
+}
+
+figcaption {
+    font-size: larger;
+    padding-bottom: 5px;
+    display: inline-table;
+    height: 100px
+}
+
+figure {
+    width:48%;
+    margin-left:2px;
+    margin-right:2px;
+    margin-bottom:5px;
+    margin-top:5px;
+    display: inline-block
+}
+
+figure img {
+    width:100%;
+    border: 2px solid rgb(153, 97, 28)
+}
+
+@media screen and (max-width: 480px) {
+    figure {
+        padding-left:40px;
+        padding-right:40px;
+        width:80%;
+        font-size:larger
+    }
+}
+
+.kasten {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px
+}
+
+.abstand {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 120px;
+    margin-right: 120px
+}
