@@ -140,51 +140,57 @@
 
             'use strict';
 
-            // let eingabe = prompt ("Bitte geben sie ihre Zahl ein.");
-            // eingabe = parseFloat(eingabe);
-            // if (isNaN(eingabe)) {
-            //     alert("Der eingebenene Wert:" + eingabe + "ist keine Zahl!");
-            // }
+            let eingabe,
+                ergebnis,
+                gerundet,
+                text;
+
+            function runden(zahl) {
+                gerundet = zahl.toFixed(2);
+                return gerundet;
+            }
 
             function eurodollar(eurotext) {
                 let eurowert = parseFloat(eurotext);
                 let ergebnis = 1.06 * eurowert;
-                return ergebnis;
+                runden(ergebnis);
+                return gerundet;
             }
 
             function dollareuro(eurotext) {
                 let eurowert = parseFloat(eurotext);
                 let ergebnis = eurowert / 1.06;
-                return ergebnis;
+                runden(ergebnis);
+                return gerundet;
             }
 
             function eurolira(eurotext) {
                 let eurowert = parseFloat(eurotext);
                 let ergebnis = 15.65 * eurowert;
-                return ergebnis;
+                runden(ergebnis);
+                return gerundet;
             }
 
             function liraeuro(eurotext) {
                 let eurowert = parseFloat(eurotext);
                 let ergebnis = eurowert / 15.65;
-                return ergebnis;
+                runden(ergebnis);
+                return gerundet;
             }
 
             function euroyen(eurotext) {
                 let eurowert = parseFloat(eurotext);
                 let ergebnis = 137.18 * eurowert;
-                return ergebnis;
+                runden(ergebnis);
+                return gerundet;
             }
 
             function yeneuro(eurotext) {
                 let eurowert = parseFloat(eurotext);
                 let ergebnis = eurowert / 137.18;
-                return ergebnis;
+                runden(ergebnis);
+                return gerundet;
             }
-
-            // let dollar = multiplizieren(eingabe);
-            // let text = "Euro = " + eingabe + ". Dollar = " + dollar + ".";
-            // alert(text);
 
             function pressbuttond() {
                 document.getElementById("Dollar").value = eurodollar(document.getElementById("Eurod").value);
